@@ -1,0 +1,14 @@
+program e053;
+var x, fat, indice: longint;
+
+begin
+	read(x);
+	fat:= 1;
+	indice:= 0;
+	while x >= fat do
+	begin
+		indice:= indice + 1;
+		fat:= fat * indice;
+	end;
+	writeln(indice);
+end.

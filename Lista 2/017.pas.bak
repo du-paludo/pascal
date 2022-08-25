@@ -1,0 +1,21 @@
+program e017;
+var n: integer;
+
+function inverso (a: integer): integer;
+var aux: integer;
+begin
+	aux:= 0;
+	while a > 0 do 
+	begin
+		aux:= aux * 10 + a mod 10;
+		a:= n div 10;
+	end;
+end;
+
+begin
+	read(n);
+	if inverso(n) = n then
+		writeln('SIM')
+	else
+		writeln('NAO');
+end.

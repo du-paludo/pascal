@@ -1,0 +1,27 @@
+program s004;
+var i, soma, num, den, teste: real;
+
+begin
+	soma:= 0;
+	num:= 1;
+	den:= 2;
+	i:= 0;
+	teste:= 1;
+	while i < 10 do
+	begin
+		soma:= soma + (num / den);
+		if teste = 1 then
+		begin
+			den:= den + 1;
+			num:= den + 1;
+			teste:= 0;
+		end
+		else begin
+			num:= num + 1;
+			den:= num + 1;
+			teste:= 1;
+		end;
+		i:= i + 1;
+	end;
+	writeln(soma:0:2);
+end.
